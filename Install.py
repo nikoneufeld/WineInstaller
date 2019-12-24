@@ -6,7 +6,7 @@ binForMac = "https://raw.githubusercontent.com/jakobneufeld/WineInstaller/master
 
 if output == "MacOS":
     print("Getting Binary")
-    os.system("curl " + binForMac + " --output Wine" )
+    os.system("curl --silent" + binForMac + " --output Wine" )
     print("Configuring")
     os.system("cp -f Wine /usr/local/bin/wine")
     os.system("chmod a+x /usr/local/bin/wine")
