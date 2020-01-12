@@ -1,10 +1,10 @@
 import os
 print("Welcome to the WINE installer")
 output = input("Choose an OS, Debian or MacOS\n")
-output.lower()
+output = output.lower()
 binForMac = "https://raw.githubusercontent.com/jakobneufeld/WineInstaller/master/Winery"
 
-if output == "MacOS":
+if output == "macos":
     print("Getting Binary")
     os.system("curl " + binForMac + " --output Wine" )
     print("Configuring")
